@@ -12,7 +12,7 @@ class newString(value:String*) {
           va <- value 
           if f(va)         
          } yield va
-      if(l.isEmpty) false else true
+         if(l.isEmpty) false else true
     }
     
     //def length(len:String):Int= len.length() 

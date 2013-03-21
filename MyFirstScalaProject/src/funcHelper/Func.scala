@@ -14,5 +14,7 @@ object Func {
        
        
   }
+  
+  def printReut() = println("I love popi")
 
 }
