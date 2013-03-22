@@ -1,4 +1,9 @@
 package funcHelper
+import java.io.File
+import scala.io.Source
+import scala.io.Codec
+
+
 
 object Func {
   
@@ -15,6 +20,22 @@ object Func {
        
   }
   
-  def printReut() = println("I love popi")
-
+  def printReut = println("I love popi")
+  
+  def printFile(nameFile:String) = {
+     
+      require(new File(nameFile).exists())
+       val lines =  Source.fromFile(nameFile)
+      
+      
+  }
+  
+  def printContentOfURL(url:java.net.URL) = {
+      val lines =  Source.fromURL(url){Codec.UTF8}.getLines()
+          lines.foreach(println) 
+      
+       
+  }
+  
+  
 }

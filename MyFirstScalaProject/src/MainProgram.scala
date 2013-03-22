@@ -1,6 +1,7 @@
 import Mix.ElementJava
 import funcHelper.Func
 import newString.newString
+import java.net.URL
 
 object MainProgram {
   val l = List("yair", "yaniv", "yael","yair")
@@ -13,13 +14,17 @@ object MainProgram {
     
    // println(Func.equalTwoStrings(l(0),l(3)))
    
-    val ll = new newString("yair","yaniv")
+    //Func.printFile("C:\\Users\\yairo\\git\\ScalaNew\\MyFirstScalaProject\\src\\MainProgram.scala")
+   
+    Func.printContentOfURL(new URL("http://www.one1.co.il"))
+  
+    /*  val ll = new newString("yair","yaniv")
 
    ll.myForEach(println);
     
    println(ll.newExists(_.equals("")))
    println(ll.newExists(_.length() % 2 == 1))
-   // println("xx")
+   */
   }
 
 }
