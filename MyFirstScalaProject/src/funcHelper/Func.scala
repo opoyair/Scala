@@ -20,7 +20,7 @@ object Func {
        
   }
   
-  def printReut = println("I love popi")
+  def printReut = println("I love opoi")
   
   def printFile(nameFile:String) = {
      
